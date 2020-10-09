@@ -1,0 +1,75 @@
+.concept {
+    background: linear-gradient(180deg, #a193861f 0%, #a193861f 40%, #a1938689 40%, #a1938689 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.concept-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.1rem;
+
+    @include tab {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include sp {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+.concept-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 180px 0;
+
+    @include tab {
+        display: inline;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    @include sp {
+        display: inline;
+        text-align: center;
+    }
+
+    &-h {
+        font-family: ヒラギノ明朝;
+        color: white;
+        letter-spacing: 15px;
+        font-size: 4rem;
+
+        @include tab {
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        @include sp {
+            font-size: 1.8rem;
+            padding-bottom: 18px;
+            padding-top: 50px;
+        }
+    }
+
+    &-t {
+        color: white;
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+
+        @include sp {
+            font-size: 1.6rem;
+            white-space: nowrap;
+        }
+    }
+}
