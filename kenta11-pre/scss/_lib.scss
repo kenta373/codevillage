@@ -26,6 +26,10 @@ html {
     font-size: 62.5%;
 }
 
+.wrap {
+    overflow: hidden;
+}
+
 h2 h3 {
     font-size: 1.8em;
 }
@@ -50,12 +54,13 @@ h2 h3 {
 
 //access//
 .inner-third {
-    padding: 260px 0px 65px;
+    padding: 200px 0px 65px;
 
     @include sp {
         padding-top: 0;
         padding-bottom: 60px;
     }
+
     .title {
         @include sp {
             margin-left: 20px;
@@ -76,6 +81,11 @@ h2 h3 {
 .catch {
     font-family: ヒラギノ明朝 Pro;
     font-size: 4rem;
+
+    @include sp {
+        font-size: 23px;
+        order: 2;
+    }
 }
 
 .title {

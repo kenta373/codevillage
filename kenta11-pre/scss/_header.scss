@@ -29,7 +29,6 @@ header {
 }
 
 .hd-logo {
-    width: 25%;
     font-size: 38px;
 
     @include tab {
@@ -37,6 +36,7 @@ header {
     }
 
     @include sp {
+        font-size: 22px;
         white-space: nowrap;
     }
 }
@@ -55,6 +55,7 @@ nav {
 
 .navlist {
     font-size: 1.8rem;
+    margin-left: 20px;
     font-weight: bold;
     color: #707070;
     display: flex;
